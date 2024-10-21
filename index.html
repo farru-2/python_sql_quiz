@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Python and SQL Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="user-info">
+        <h1>Welcome to the Quiz</h1>
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" placeholder="Your Name">
+        <button onclick="startQuiz()">Start</button>
+    </div>
+
+    <div id="quiz-selection" style="display:none;">
+        <h2>Hello <span id="user-name"></span>, select your quiz:</h2>
+        <button onclick="chooseQuiz('python')">Python Quiz</button>
+        <button onclick="chooseQuiz('sql')">SQL Quiz</button>
+    </div>
+
+    <div id="quiz-container" style="display:none;">
+        <h2 id="question"></h2>
+        <ul id="options"></ul>
+        <p id="timer"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
